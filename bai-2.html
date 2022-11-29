@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Form</title>
+    <style>
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        max-width: 500px;
+        color: #ff00ff;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+      .form-group .form-input {
+        display: flex;
+        min-width: 330px;
+        max-width: 330px;
+      }
+      .form-group .form-input input,
+      .form-group .form-input textarea,
+      .form-group .form-input select {
+        width: 100%;
+        display: block;
+        border: 1px solid #800080;
+        color: #0000aa;
+        padding: 4px 12px;
+      }
+      .form-group .form-input textarea {
+        height: 200px;
+      }
+      .form-controller {
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
+      }
+      .form-controller button[type="submit"] {
+        align-self: center;
+        padding: 4px 12px;
+        border: 1px solid #800080;
+        color: #0000aa;
+        background-color: #99ffcc;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="form-group">
+        <label for="name">Tên của bạn: </label>
+        <div class="form-input">
+          <input type="text" id="name" placeholder="Tên của bạn" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email của bạn: </label>
+        <div class="form-input">
+          <input type="email" id="email" placeholder="Email của bạn" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comment">Nội dung phản hồi: </label>
+        <div class="form-input">
+          <textarea
+            type="email"
+            id="comment"
+            placeholder="Nội dung phản hồi"
+          ></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sendTo">Gửi đến: </label>
+        <div class="form-input">
+          <select id="sendTo">
+            <option value="0">Phòng kế hoạch</option>
+            <option value="1">Phòng tài chính</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-controller">
+        <button type="submit">Gửi phản hồi</button>
+      </div>
+    </form>
+  </body>
+</html>
